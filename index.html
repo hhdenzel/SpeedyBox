@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>SpeedyBox</title>
+
+<style>
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+/* ENCABEZADO */
+.header {
+    background-color: #0a2ea8;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+.menu a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: orange;
+}
+
+/* SECCIONES */
+.section {
+    padding: 100px 10%;
+    margin-bottom: 60px;
+}
+
+/* HERO */
+.hero {
+    background: white;
+    text-align: center;
+}
+
+.hero img {
+    width: 80%;
+    border-radius: 10px;
+}
+
+/* SOBRE */
+.about {
+    background: white;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.about img {
+    width: 40%;
+    border-radius: 10px;
+}
+
+/* SERVICIOS */
+.services {
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card .text {
+    background: orange;
+    color: white;
+    padding: 15px;
+}
+
+/* TESTIMONIOS (SE MANTIENE PERO SIN BOTÓN EN MENÚ) */
+.testimonios {
+    background: orange;
+    color: white;
+    text-align: center;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #0a2ea8;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- ENCABEZADO -->
+<div class="header">
+    <h1>🚚 SpeedyBox</h1>
+
+    <div class="menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre">Sobre Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+    </div>
+</div>
+
+<!-- INICIO -->
+<div id="inicio" class="section hero">
+    <h1>Envíos rápidos y seguros</h1>
+    <p>Tu paquete, a tiempo y con seguimiento en tiempo real.</p>
+
+    <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d">
+</div>
+
+<!-- SOBRE -->
+<div id="sobre" class="section about">
+    <img src="https://images.unsplash.com/photo-1605902711622-cfb43c44367f">
+
+    <div>
+        <h1>Sobre SpeedyBox</h1>
+
+        <p><b>Misión:</b> Brindar envíos rápidos, seguros y confiables, ofreciendo soluciones logísticas eficientes e innovadoras.</p>
+
+        <p><b>Visión:</b> Ser líderes en envíos a nivel nacional e internacional, destacando por rapidez, seguridad y excelente servicio.</p>
+    </div>
+</div>
+
+<!-- SERVICIOS -->
+<div id="servicios" class="section services">
+    <h1>SERVICIOS</h1>
+
+    <div class="cards">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1605902711622-cfb43c44367f">
+            <div class="text">
+                <h3>Envíos nacionales</h3>
+                <p>Entrega segura a cualquier destino.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216">
+            <div class="text">
+                <h3>Mensajería exprés</h3>
+                <p>Entrega rápida puerta a puerta.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1553413077-190dd305871c">
+            <div class="text">
+                <h3>Gestión logística</h3>
+                <p>Seguimiento en tiempo real.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- TESTIMONIOS (SIN MENÚ) -->
+<div class="section testimonios">
+    <h1>TESTIMONIOS</h1>
+    <p>"Excelente servicio, entregas rápidas y seguras."</p>
+    <p><b>- Carlos Fernández</b></p>
+</div>
+
+<!-- CONTACTO -->
+<div id="contacto" class="section hero">
+    <h1>Contacto</h1>
+    <p>Correo: speedybox@gmail.com</p>
+    <p>Teléfono: 1234-5678</p>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    <p>© 2026 SpeedyBox</p>
+</div>
+
+</body>
+</html>
